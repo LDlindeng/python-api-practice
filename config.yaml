@@ -1,0 +1,9 @@
+base_url: "https://httpbin.org"
+timeout: 5
+verify_ssl: true
+
+headers:
+  User-Agent: "qa-practice/1.0"
+  Accept: "application/json"
+
+report_dir: "reports"
