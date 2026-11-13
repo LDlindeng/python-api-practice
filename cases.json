@@ -1,1 +1,43 @@
-[]
+[
+  {
+    "name": "获取查询参数",
+    "method": "GET",
+    "path": "/get",
+    "params": {
+      "page": 1,
+      "size": 10
+    },
+    "expected_status": 200
+  },
+  {
+    "name": "提交 JSON 数据",
+    "method": "POST",
+    "path": "/post",
+    "json": {
+      "id": 1,
+      "name": "test"
+    },
+    "expected_status": 200
+  },
+  {
+    "name": "获取 JSON 数据",
+    "method": "GET",
+    "path": "/json",
+    "expected_status": 200
+  },
+  {
+    "name": "获取请求头",
+    "method": "GET",
+    "path": "/headers",
+    "headers": {
+      "X-Test-Case": "case-004"
+    },
+    "expected_status": 200
+  },
+  {
+    "name": "模拟 404",
+    "method": "GET",
+    "path": "/status/404",
+    "expected_status": 404
+  }
+]
